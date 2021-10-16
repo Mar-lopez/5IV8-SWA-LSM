@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/icono.png">
+    <title>Menú AES</title>
+    <link href="https://bootswatch.com/5/morph/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .vis {
+            background-color: aliceblue;
+            width: 80%;
+        }
+    </style>
+</head>
+<style>
+    #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+    }
+
+    #mySidenav a:hover {
+        left: 0;
+    }
+
+    #A {
+        top: 20px;
+        background-color: #04AA6D;
+    }
+
+    #B {
+        top: 80px;
+        background-color: #2196F3;
+    }
+
+    #C {
+        top: 140px;
+        background-color: #f44336;
+    }
+
+    #D {
+        top: 200px;
+        background-color: #555
+    }
+</style>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+
+        <a href="./AES/AES.html" id="A">AES</a>
+        <a href="index.html" id="B"><-</a>
+    </div>
+
+
+
+
+    <div class="input-group-prepend" style="margin-top: 4%;">
+        <center>
+            <header>
+                <h1>AES MENU</h1>
+            </header>
+            <br>
+            <p><button class="btn btn-info"><a href="Cifrado.html">Cifrar</a></button></p>
+            <p><button class="btn btn-primary"><a href="Descifrado.html">Descifrar</a></button></p>
+        </center>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="js/aes.js"></script>
+</body>
+
+</html>

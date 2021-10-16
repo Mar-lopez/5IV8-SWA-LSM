@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://bootswatch.com/5/quartz/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="IMG/icono.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <title>Cifrado</title>
+</head>
+
+<style>
+    #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 150px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+    }
+
+    #mySidenav a:hover {
+        left: 0;
+    }
+
+    #A {
+        top: 20px;
+
+    }
+
+    #B {
+        top: 80px;
+
+    }
+
+    #C {
+        top: 140px;
+
+    }
+
+    #D {
+        top: 200px;
+
+    }
+</style>
+</head>
+
+<body>
+
+
+    <div id="mySidenav" class="sidenav">
+
+        <a href="index.html" id="A"><button type="button" class="btn btn-primary"> REGRESAR </button></a>
+        <a href="DESCIFRADO.html" id="B"> <button type="button" class="btn btn-secondary">DESCIFRADO</button></a>
+    </div>
+
+
+
+    <div class="col-md-5 offset-md-3" style="margin-right: 20rem;">
+        <br><br>
+        <center>
+            <h1>--CIFRADO--</h1>
+            <br>
+            <table class=".table-bordered">
+                <br>
+                <center>
+                    <h5>SELECIONA </h5>
+                </center>
+                <center>
+                    <h5>UN TIPO DE CIFRADO</h5>
+                </center>
+                <select class="form-select" name="tipoAES" id="tipo">
+                    <option value="1a">*A*</option>
+
+                    <option value="1b">*B*</option>
+
+                    <option value="1c">*C*</option>
+
+                </select>
+                <br>
+                <br>
+                <textarea class="form-control" id="txt" placeholder="Mensaje"></textarea>
+                <br>
+                <input class="form-control" type="txt" placeholder="Clave" id="clave">
+                <td>
+                    <input class="btn btn-info" type="button" value="Cifrar" onclick="cifrar()">
+                    <br>
+                    <br>
+                </td>
+                <br>
+                <tr>
+                   <h5>El texto cifrado es:</h5> <br><br>
+                    <textarea class="form-control" id="txtcifrado" placeholder="Texto Cifrado" disabled></textarea>
+                </tr>
+
+                <br>
+
+                <p id="txt"></p>
+
+                <div id="resultado"></div>
+            </table>
+
+
+        </center>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="js/aes.js"></script>
+</body>
+
+</html>
